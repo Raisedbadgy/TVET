@@ -25,7 +25,7 @@ namespace Minesweeper
 
             for (int x = 0; x < width; x++)
             {
-                for(int y = 0; y < height; y++)
+                for (int y = 0; y < height; y++)
                 {
                     Vector2 halfSize = new Vector2(width * 0.5f,
                                                    height * 0.5f);
@@ -38,13 +38,19 @@ namespace Minesweeper
                     tile.x = x;
                     tile.y = y;
                     tiles[x, y] = tile;
-
-          
+                    
                 }
-                
             }
 
         }
-
+        void Start()
+        {
+            GeneratTiles();
+            public int GetAdjacentMineCount()
+        {
+            int count = 0
+                for (int x = -1; x <= 1; x++)
+        }
+        }
     }
 }
